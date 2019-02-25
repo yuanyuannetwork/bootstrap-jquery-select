@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>基于bootstrap的jQuery select筛选下拉框代码</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+<script src="js/modernizr.min.js"></script>
+</head>
+<body style="padding-bottom:50px;">
+<script src="/demos/googlegg.js"></script> 
+<main>
+	<div class="container">
+		<div class="row">
+		
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-sm-4">
+						<div id="select1" class="selectpicker" data-clear="true" data-autoclose="false" data-live="true" data-filter="select2 select3" data-fmethod="recursive">
+							<a href="#" class="clear"><span class="fa fa-times"></span><span class="sr-only">Cancel the selection</span></a>
+							<button data-id="prov" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
+							<span class="placeholder">请选择费用承担部门</span>
+							<span class="caret"></span>
+							</button>
+							<div class="dropdown-menu">
+								<div class="live-filtering" data-clear="true" data-autocomplete="true" data-keys="true">
+									<label class="sr-only" for="input-bts-ex-5">请输入提示</label>
+									<div class="search-box">
+										<div class="input-group">
+											<span class="input-group-addon" id="search-icon6">
+											<span class="fa fa-search"></span>
+											<a href="#" class="fa fa-times hide filter-clear"><span class="sr-only">Clear filter</span></a>
+											</span>
+											<input type="text" placeholder="Search in the list" id="input-select1" class="form-control live-search" aria-describedby="search-icon6" tabindex="1" />
+										</div>
+									</div>
+									<div class="list-to-filter">
+										<ul class="list-unstyled">
+											<li class="optgroup">
+												<span class="optgroup-header">List Group <span class="subtext"></span></span>
+												<ul class="list-unstyled">
+													<li class="filter-item items" data-filter="item 1" data-value="1">item 1</li>
+													<li class="filter-item items" data-filter="item 2" data-value="2">item 2</li>
+													<li class="filter-item items" data-filter="item 3" data-value="3">item 3</li>
+													<li class="filter-item items" data-filter="item 4" data-value="4">item 4</li>
+												</ul>
+											</li>
+										</ul>
+										<div class="no-search-results">
+											<div class="alert alert-warning" role="alert"><i class="fa fa-warning margin-right-sm"></i>No entry for <strong>'<span></span>'</strong> was found.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<input type="hidden" name="bts-ex-5" value="">
+						</div>
+					</div>
+														</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vendor/tabcomplete.min.js"></script>
+<script src="js/vendor/livefilter.min.js"></script>
+<script src="js/vendor/src/bootstrap-select.js"></script>
+<script src="js/vendor/src/filterlist.js"></script>
+<script src="js/plugins.js"></script>
+
+</body>
+</html>
